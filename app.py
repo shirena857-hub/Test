@@ -43,20 +43,20 @@ logger = logging.getLogger(__name__)
 
 # ============ CONFIGURATION ============
 class Config:
-    TELEGRAM_TOKEN = "8215271981:AAEIn1H03uk5LkPQc_XjARWuBGLhCtcrrew"
+    TELEGRAM_TOKEN = "8642055013:AAGFs4ti8RVhOZ8RP2Ta8xrXzSsT6b4dwsY"
     ADMIN_IDS = [6804172454]
     CHANNEL_LINK = "https://t.me/shihab_ff_66bot"
-    BOT_USERNAME = "@shihab_ff_log_bot"
+    BOT_USERNAME = "@File_store69xx_bot"
     
     # Storage limits
     MAX_STORAGE_MB = 1000
     AUTO_CLEANUP_HOURS = 1
-    MAX_FILE_SIZE_MB = 50
+    MAX_FILE_SIZE_MB = 100
     MAX_FILE_SIZE_BYTES = MAX_FILE_SIZE_MB * 1024 * 1024
     
     # User limits
     MAX_DOWNLOADS_PER_DAY = 100
-    RATE_LIMIT_PER_HOUR = 30
+    RATE_LIMIT_PER_HOUR = 100
     
     # Paths
     DOWNLOAD_DIR = "downloads"
