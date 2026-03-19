@@ -43,10 +43,10 @@ logger = logging.getLogger(__name__)
 
 # ============ CONFIGURATION ============
 class Config:
-    TELEGRAM_TOKEN = "8642055013:AAGFs4ti8RVhOZ8RP2Ta8xrXzSsT6b4dwsY"
-    ADMIN_IDS = [6804172454]
-    CHANNEL_LINK = "https://t.me/shihab_ff_66bot"
-    BOT_USERNAME = "@File_store69xx_bot"
+    TELEGRAM_TOKEN = os.getenv("8642055013:AAGFs4ti8RVhOZ8RP2Ta8xrXzSsT6b4dwsY")
+    ADMIN_IDS = os.getenv([6804172454])
+    CHANNEL_LINK = os.getenv("https://t.me/shihab_ff_66bot")
+    BOT_USERNAME = os.getenv("@File_store69xx_bot")
     
     # Storage limits
     MAX_STORAGE_MB = 1000
