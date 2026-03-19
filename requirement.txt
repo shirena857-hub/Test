@@ -1,0 +1,4 @@
+python-telegram-bot>=20.0
+yt-dlp>=2023.0
+rich>=13.0
+schedule>=1.0
