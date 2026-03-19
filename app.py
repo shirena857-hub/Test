@@ -42,13 +42,20 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 # ============ CONFIGURATION ============
+import os
+
 class Config:
-    TELEGRAM_TOKEN = os.getenv("8642055013:AAGFs4ti8RVhOZ8RP2Ta8xrXzSsT6b4dwsY")
-    ADMIN_IDS = os.getenv([6804172454])
-    CHANNEL_LINK = os.getenv("https://t.me/shihab_ff_66bot")
-    BOT_USERNAME = os.getenv("@File_store69xx_bot")
+    # Environment variables (Render-এ সেট করতে হবে)
+    TELEGRAM_TOKEN = os.getenv('TELEGRAM_TOKEN', '8642055013:AAGFs4ti8RVhOZ8RP2Ta8xrXzSsT6b4dwsY')
     
-    # Storage limits
+    # ADMIN_IDS কমা দিয়ে আলাদা করে env-এ দিন, যেমন: "6804172454,123456789"
+    admin_ids_str = os.getenv('ADMIN_IDS', '6804172454')
+    ADMIN_IDS = [int(id.strip()) for id in admin_ids_str.split(',') if id.strip()]
+    
+    CHANNEL_LINK = os.getenv('CHANNEL_LINK', 'https://t.me/shihab_ff_66bot')
+    BOT_USERNAME = os.getenv('BOT_USERNAME', '@File_store69xx_bot')
+    
+    # ... বাকি কনফিগ (storage limits, paths ইত্যাদি) আগের মতোই থাকবে
     MAX_STORAGE_MB = 1000
     AUTO_CLEANUP_HOURS = 1
     MAX_FILE_SIZE_MB = 100
