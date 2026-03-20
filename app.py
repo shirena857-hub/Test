@@ -42,7 +42,7 @@ console = Console()
 
 # ============ CONFIGURATION (Environment variables) ============
 class Config:
-    TELEGRAM_TOKEN = os.getenv('TELEGRAM_TOKEN', 'YOUR_BOT_TOKEN')
+    TELEGRAM_TOKEN = os.getenv('TELEGRAM_TOKEN', '8642055013:AAGFs4ti8RVhOZ8RP2Ta8xrXzSsT6b4dwsY')
     admin_ids_str = os.getenv('ADMIN_IDS', '6804172454')
     ADMIN_IDS = [int(x.strip()) for x in admin_ids_str.split(',') if x.strip()]
     CHANNEL_LINK = os.getenv('CHANNEL_LINK', 'https://t.me/shihab_ff_66bot')
